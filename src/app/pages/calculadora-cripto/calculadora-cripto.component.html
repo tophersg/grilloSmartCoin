@@ -1,0 +1,33 @@
+<form class=" " [formGroup]="inversionMax" style="padding: 2%;">
+    <div class="container-info">
+        <mat-form-field class="example-full-width">
+            <mat-label style="font-weight: bold;">Dolares a Invertir $</mat-label>
+            <input matInput class="form-control" type="number" formControlName="invertido" value="invertido">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label style="font-weight: bold;">Valor Actual Cripto $</mat-label>
+            <input matInput class="form-control" type="number" formControlName="valorAccion" value="valorAccion">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label style="font-weight: bold;">Valor a Futuro $</mat-label>
+            <input matInput class="form-control" type="number" formControlName="valorFuturo" value="valorFuturo">
+        </mat-form-field>
+    </div>
+    <ng-container *ngIf="valorPositivo">
+        <div class="result-container" style="    padding-bottom: 10px">
+            <div [class]="alertaDiv" role="alert">
+                <div style="padding: 1px;">
+                    <h2>Inversion + Ganancia: {{this.totalAganar | currency:'USD'}}</h2>
+                    <h3>Ganancias:{{this.ganancia | currency:'USD' }} Dolares</h3>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+    <div style=" margin-left: 80%;">
+        <button mat-raised-button
+            (click)="calculcarTotal(inversionMax.value.invertido,inversionMax.value.valorAccion,this.inversionMax.value.valorFuturo)"
+            mat-button>Calcular Inversion</button>
+    </div>
+</form>

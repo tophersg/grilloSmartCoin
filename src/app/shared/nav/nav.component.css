@@ -1,0 +1,31 @@
+/* Fondo Nav */
+.fondoNav{
+    background-color: #141212d4;
+    
+}
+
+.btnTamañoNav{
+    width: 135px;
+    height: 40px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #6fc62c;
+    border-color: #6fc62c;
+}
+img{
+
+}
+/* btn */
+.flexAlMedio{
+    align-items:center;
+      display: flex;
+      justify-content: space-between;
+}
+/* Tamaño Celular */
+@media (max-width: 600px) {
+    img{
+        max-width: 100%;
+    }
+}

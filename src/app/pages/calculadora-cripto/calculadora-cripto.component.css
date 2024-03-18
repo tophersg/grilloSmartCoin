@@ -1,0 +1,38 @@
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #007f36;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.container-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.result-container {
+}
+
+
+
+.alert-success {
+    border-radius: 10px 10px 10px 10px;
+    background: #7bca29;
+}
+.alert-danger {
+    border-radius: 10px 10px 10px 10px;
+    background: #ff000076;
+}
+
+.text-center {
+    text-align: center;
+}

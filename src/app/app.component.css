@@ -1,0 +1,42 @@
+/* Paleta de colores */
+/* 
+    Negro: 413A3D
+    Verde: 197E61
+    Verde: 7BCA29
+    blanco: EDEAE1
+ */
+.fondoInicio {
+    /* background: linear-gradient(rgb(0 127 54 / 40%) 0%, rgb(0 127 54) 413px); */
+    background: #50505000;
+}
+
+.fondoContenido {
+    background: #b7b7b76b;
+    border: 10px 10px 10px 10px;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flexAlMedio {
+    align-items: center;
+    justify-content: center;
+}
+
+/* Poner los border circulares */
+
+.borderRadius {
+    border-radius: 4px 4px 4px 4px;
+}
+
+.container-main {
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+.pilar {
+    display: flex;
+    align-items: center;
+}
