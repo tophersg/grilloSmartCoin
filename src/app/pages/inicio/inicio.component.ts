@@ -3,29 +3,32 @@ import { CommonModule } from '@angular/common';
 import { CalculadoraCriptoComponent } from '../calculadora-cripto/calculadora-cripto.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { CriptosService } from '../../services/criptos.service';
+import { HttpClientModule } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { TableCryptoComponent } from '../table-crypto/table-crypto.component';
 @Component({
   selector: 'app-inicio',
   standalone: true,
+  providers:[CriptosService],
   imports: [CommonModule,
     CalculadoraCriptoComponent,
+    TableCryptoComponent,
     MatFormFieldModule,
-    MatInputModule],
+    MatInputModule,
+    HttpClientModule],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })
 export class InicioComponent {
+  public getData$!: Observable<any>;
 
-  constructor() { }
+  constructor() {}
   mostrarModulo2: boolean = false;
   mostrarModulo3: boolean = false;
   ngOnInit(): void {
   }
-
-  // obtener() {
-  //   this.prueba.obtenerValorDolarChile().toPromise().then((data: any) => {
-  //   });
-  //   // this.prueba.obtenerValorDolarChile().subscribe((data:any)=> {console.log(data)})
-  // }
+  
   mostrarModulo() {
     if (this.mostrarModulo2 == false) {
 

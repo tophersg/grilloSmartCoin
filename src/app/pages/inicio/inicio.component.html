@@ -1,68 +1,24 @@
-<!-- <app-calculadora-cripto></app-calculadora-cripto> -->
-<!-- <app-lista-cripto></app-lista-cripto> -->
-
-<div class="container-inicio">
-    <div class="info-card" role="alert">
-        <h4>🦗 ¡¡¡Bienvenidos a la Grillocomunidad!!!🦗</h4>
-        <hr>
-        <p>Nuestra calculadora sirve para que rápidamente puedas estimar ganancias o perdidas de una
-            criptomoneda,
-            solo necesitas especificar 3 cosas:
-        </p>
-        <ol>
-            <li>Cuanto piensas invertir</li>
-            <li>El precio base de la criptomoneda</li>
-            <li>El valor que piensas puede tener la criptomoneda</li>
-        </ol>
-        <p>A base de lo anterior, mira el siguiente ejemplo para que quede más claro:
-        </p>
-        <div class="container-info">
-
-            <mat-form-field class="example-full-width">
-                <mat-label>Dinero a invertir en Dolares</mat-label>
-                <input matInput disabled value="$ 1000">
-            </mat-form-field>
-
-            <mat-form-field>
-                <mat-label>Valor de cripto actual</mat-label>
-                <input matInput disabled value="$ 2.84">
-            </mat-form-field>
-
-            <mat-form-field>
-                <mat-label>Valor que piensas tendrá a futuro</mat-label>
-                <input matInput disabled value="$ 2.84">
-            </mat-form-field>
-
-        </div>
-        <div style="background-color: #ff8000a2; border-radius: 10px 10px 10px 10px;">
-            <p style="padding: 1%;">Nota: No se acepta el simbolo "," (coma)</p>
-        </div>
-        <!-- <h5>Puedes usar hasta 3 instancias para poder calcular con distintas criptos, solo necesitas pinchar el "+"</h5> -->
-    </div>
-</div>
-<div class="col-12">
+<div>
     <app-calculadora-cripto></app-calculadora-cripto>
-    <!-- <ng-container *ngIf="mostrarModulo2">
-                <app-calculadora-cripto2></app-calculadora-cripto2>
-            </ng-container>
-            <ng-container *ngIf="mostrarModulo3">
-                <app-calculadora-cripto3></app-calculadora-cripto3>
-            </ng-container> -->
+    <ng-container *ngIf="mostrarModulo2">
+        <app-calculadora-cripto></app-calculadora-cripto>
+    </ng-container>
+    <ng-container *ngIf="mostrarModulo3">
+        <app-calculadora-cripto></app-calculadora-cripto>
+    </ng-container>
 
 </div>
 
-<!-- <div class="row  justify-content-center pt-3">
-    <div class="col-4 text-center" *ngIf="mostrarModulo2">
+<div style="display: flex; justify-content: center;">
+    <div class="" *ngIf="mostrarModulo2">
         <img class="ImgPuntero efecto" src="./assets/img/logoMenos.png" alt="" width="40" (click)="ocultarModulo()">
     </div>
-    <div class="col-4 text-center  " *ngIf="!mostrarModulo3">
+    <div style="margin-left: 20px;" *ngIf="!mostrarModulo3">
         <img class="ImgPuntero efecto" src="./assets/img/logoMas.png" alt="" width="40" (click)="mostrarModulo()">
     </div>
-</div> -->
+</div>
 
-
-
+<app-table-crypto></app-table-crypto>
 <!-- <app-comprar-cripto></app-comprar-cripto>
 <app-tabla-cripto></app-tabla-cripto> -->
-<div class="pt-3"></div>
 <!-- <app-lista-cripto></app-lista-cripto> -->

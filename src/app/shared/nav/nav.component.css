@@ -14,9 +14,7 @@
     background-color: #6fc62c;
     border-color: #6fc62c;
 }
-img{
 
-}
 /* btn */
 .flexAlMedio{
     align-items:center;
@@ -28,4 +26,31 @@ img{
     img{
         max-width: 100%;
     }
+}
+
+.fondoIni{
+    background: white;
+}
+
+.ImgPuntero{
+    cursor: pointer;
+    
+}
+.efecto:hover{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
+.container-inicio{
+    padding: 2%;
+    
+}
+
+.info-card{
+    background: #fff;
+    border-radius: 10px 10px 10px 10px;
+    padding: 1%;
+}
+
+.container-info{
+    display: flex;
+    justify-content: space-around;
 }
